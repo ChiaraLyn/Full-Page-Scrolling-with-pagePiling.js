@@ -1,0 +1,51 @@
+<!--Based on https://youtu.be/wgcw6mUECKc  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.pagepiling.css" />
+    <title>Scroll Vertical Pages</title>
+  </head>
+
+  <body>
+    <div id="pagepiling">
+      <div class="section sec1"><h2>Norway</h2></div>
+      <div class="section sec2"><h2>Spain</h2></div>
+      <div class="section sec3"><h2>France</h2></div>
+      <div class="section sec4"><h2>Italy</h2></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="js/jquery.pagepiling.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#pagepiling").pagepiling({
+          //here you can add other values, look on git
+          loopBottom: false,
+          loopTop: false,
+          navigation: {
+            textColor: "#fff",
+            bulletsColor: "#fff",
+            position: "right",
+            tooltips: []
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
